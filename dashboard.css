@@ -11,18 +11,132 @@
     --color-blue: #005EB8;
     --color-sky: #2196F3;
     --color-white: #FCFCFC;
-    --app-width: 780px;
+    --app-width: 80%;
     --header-height: 120px;
 }
 
 body {
-    width: var(--app-width);
     height: 100dvh;
-    /* Tener en cuenta que el footer debe estar fixed abajo */
     margin: 0 auto;
+    width: var(--app-width);
     color: var(--color-white);
     background: var(--color-blue);
     position: relative;
     font-family: 'Google Sans';
-    /* background: linear-gradient(var(--color-blue), var(--color-sky)); */
+    background: linear-gradient(var(--color-blue), var(--color-sky));
+    color: black;
+}
+
+/* ==================== HEADER ==================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+header h1 {
+    color: var(--color-white);
+}
+
+.btn-menu {
+    background: transparent;
+    border: 0px;
+    color: var(--color-white);
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.hero {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .hero-stat {
+        font-size: 24px;
+        color: white;
+    }
+
+    .hero-value {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+/* ==================== MAIN ==================== */
+
+.app {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background: var(--color-white);
+    border-radius: 15px;
+    transition: all ease-in-out 100ms;
+    cursor: pointer;
+}
+
+.card:hover {
+    scale: 1.05;
+    box-shadow: 0 0 15px 1px white;
+    transition: all ease-in-out 300ms;
+}
+
+.card-link {
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-image {
+    width: 64px;
+    height: 64px;
+    aspect-ratio: 1 / 1;
+    margin-right: 25px;
+    object-fit: contain;
+}
+
+.card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-pricing {
+    text-align: right;
+}
+
+.card-price {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* ==================== FOOTER ==================== */
+
+footer {
+    bottom: 0;
+    width: var(--app-width);
+    position: fixed;
+    padding: 2% 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-white);
+}
+
+.github-icon {
+    color: var(--color-white);
+    background: transparent;
+    transition: transform 100ms ease-in-out;
+}
+
+.github-icon:hover {
+    transform: scale(1.1);
+    transition: transform 300ms ease-in-out;
 }
