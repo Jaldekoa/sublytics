@@ -1,0 +1,28 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-blue: #005EB8;
+    --color-sky: #2196F3;
+    --color-white: #FCFCFC;
+    --app-width: 780px;
+    --header-height: 120px;
+}
+
+body {
+    width: var(--app-width);
+    height: 100dvh;
+    /* Tener en cuenta que el footer debe estar fixed abajo */
+    margin: 0 auto;
+    color: var(--color-white);
+    background: var(--color-blue);
+    position: relative;
+    font-family: 'Google Sans';
+    /* background: linear-gradient(var(--color-blue), var(--color-sky)); */
+}
