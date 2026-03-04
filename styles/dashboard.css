@@ -11,19 +11,20 @@
     --color-blue: #005EB8;
     --color-sky: #2196F3;
     --color-white: #FCFCFC;
-    --app-width: 80%;
+    --min-app-width: 50%;
+    --max-app-width: 100%;
     --header-height: 120px;
 }
 
 body {
-    height: 100dvh;
+    min-height: 100dvh;
     margin: 0 auto;
-    width: var(--app-width);
+    width: clamp(var(--min-app-width), 70dvw, var(--max-app-width));
     color: var(--color-white);
     background: var(--color-blue);
-    position: relative;
     font-family: 'Google Sans';
     background: linear-gradient(var(--color-blue), var(--color-sky));
+    background-attachment: fixed;
     color: black;
 }
 
@@ -64,6 +65,47 @@ header h1 {
     }
 }
 
+.app-header {
+    position: relative;
+    z-index: 1;
+}
+
+.main-nav {
+    position: absolute;
+    top: 75%;
+    right: 2rem;
+    background-color: var(--color-white);
+    border-radius: 12px;
+    padding: 1rem;
+    min-width: 200px;
+    box-shadow: 0 10px 25px rgba(00, 5E, B8, 0.2);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--color-blue);
+    font-weight: 600;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.main-nav a:hover {
+    background-color: rgba(0, 94, 184, 0.1);
+}
+
+.main-nav[hidden] {
+    display: none;
+}
+
 /* ==================== MAIN ==================== */
 
 .app {
@@ -85,8 +127,12 @@ header h1 {
     transition: all ease-in-out 300ms;
 }
 
+.card-title {
+    text-wrap: pretty;
+}
+
 .card-link {
-    padding: 2%;
+    padding: 4%;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -97,8 +143,9 @@ header h1 {
     width: 64px;
     height: 64px;
     aspect-ratio: 1 / 1;
-    margin-right: 25px;
+    margin-right: clamp(5%, 25px, 12px);
     object-fit: contain;
+    border-radius: 10px;
 }
 
 .card-content {
@@ -121,9 +168,7 @@ header h1 {
 
 footer {
     bottom: 0;
-    width: var(--app-width);
-    position: fixed;
-    padding: 2% 2%;
+    padding: 4% 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -139,4 +184,27 @@ footer {
 .github-icon:hover {
     transform: scale(1.1);
     transition: transform 300ms ease-in-out;
+}
+
+/* Media queries (min.width: 540px)*/
+
+@media (width <=720px) {
+
+    .card-title,
+    .card-price {
+        font-size: 1rem;
+    }
+
+    .card-category,
+    .card-period {
+        font-size: 0.75rem;
+    }
+
+    .hero .hero-value {
+        font-size: 1em;
+    }
+
+    .hero-label {
+        font-size: 0.75rem;
+    }
 }
