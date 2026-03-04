@@ -2,6 +2,8 @@
 
 [![Web Oficial](https://img.shields.io/badge/Live_demo-Sublytics-0A66C2?style=flat&logo=google-chrome&logoColor=white)](https://sublytics.pages.dev/)
 
+ ![Sublytics Social Preview](./assets/Sublytics%20Social%20Preview.jpg)
+
 ## Descripción
 
 Sublytics es una plataforma de control inteligente diseñada para centralizar, optimizar el gasto y visualizar todos los pagos recurrentes en suscripciones digitales de un usuario en un único dashboard. En un ecosistema donde el modelo de pago recurrente se ha fragmentado (streaming, software, productividad, etc.), el usuario tiende a perder la noción de sus compromisos financieros, resultando en lo que conocemos como "gastos fantasmas": renovaciones automáticas de servicios que apenas o nunca ya se utilizan.
