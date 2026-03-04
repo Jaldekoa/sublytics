@@ -134,7 +134,7 @@ body {
     }
 }
 
-/* Media queries (min.width: 1024px)*/
+/* Media queries */
 
 @media (prefers-color-scheme: light) {
     :root {
@@ -143,7 +143,6 @@ body {
     }
 }
 
-/* 2. Estilos que se AÑADEN para pantallas más grandes */
 @media (width<=1024px) {
     .app {
         flex-direction: column;
