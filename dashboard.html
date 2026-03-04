@@ -28,10 +28,9 @@
 
         <nav id="main-navigation" class="main-nav" hidden>
             <ul>
-                <li><a href="/dashboard">Dashboard</a></li>
-                <li><a href="/subscriptions">Suscripciones</a></li>
-                <li><a href="/reports">Informes</a></li>
-                <li><a href="/settings">Configuración</a></li>
+                <li class="username">Bienvenido</li>
+                <li><a href="/subscription.html">Añadir suscripción</a></li>
+                <li><a href="/">Cerrar sesión</a></li>
             </ul>
         </nav>
 
@@ -44,29 +43,137 @@
         <!-- HERO -->
         <section class="hero">
             <div class="hero-stat">
-                <p class="hero-value">694,04€</p>
-                <p class="hero-label">Media anual</p>
+                <p class="hero-value">77,48€</p>
+                <p class="hero-label">Total mensual</p>
             </div>
             <div class="hero-stat">
-                <p class="hero-value">10</p>
+                <p class="hero-value">6</p>
                 <p class="hero-label">Suscripciones</p>
             </div>
         </section>
 
         <!-- CARD -->
         <article class="card">
-            <a class="card-link" href="/subscriptions/google-one.html">
-                <img class="card-image" src="assets/Google_One_logo.svg" alt="Suscripción a Nombre del producto" />
+            <a class="card-link" href="/subscription.html?title=Netflix">
+                <img class="card-image" src="assets/Netflix.webp" alt="Suscripción a Netflix" />
 
                 <div class="card-content">
                     <div class="card-info">
-                        <h2 class="card-title">Nombre del producto</h2>
-                        <p class="card-category">Categoría</p>
+                        <h2 class="card-title">Netflix</h2>
+                        <p class="card-category">Entretenimiento</p>
                     </div>
 
                     <div class="card-pricing">
-                        <p class="card-price">Precio</p>
-                        <p class="card-period">Temporalidad</p>
+                        <p class="card-price">13,99&euro;</p>
+                        <p class="card-period">Mensual</p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <article class="card">
+            <a class="card-link" href="/subscription.html?title=ChatGPT%20Plus">
+                <img class="card-image" src="assets/ChatGPT.png" alt="Suscripción a ChatGPT Plus" />
+
+                <div class="card-content">
+                    <div class="card-info">
+                        <h2 class="card-title">ChatGPT Plus</h2>
+                        <p class="card-category">Productividad</p>
+                    </div>
+
+                    <div class="card-pricing">
+                        <p class="card-price">23,00&euro;</p>
+                        <p class="card-period">Mensual</p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <article class="card">
+            <a class="card-link" href="/subscription.html?title=OVH&VPS">
+                <img class="card-image" src="assets/OVH.png" alt="Suscripción a OVH VPS" />
+
+                <div class="card-content">
+                    <div class="card-info">
+                        <h2 class="card-title">OVH VPS</h2>
+                        <p class="card-category">Profesional</p>
+                    </div>
+
+                    <div class="card-pricing">
+                        <p class="card-price">66,24&euro;</p>
+                        <p class="card-period">Anual</p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <article class="card">
+            <a class="card-link" href="/subscription.html?title=Youtube%20Premium">
+                <img class="card-image" src="assets/Youtube.png" alt="Suscripción a Youtube Premium" />
+
+                <div class="card-content">
+                    <div class="card-info">
+                        <h2 class="card-title">Youtube Premium</h2>
+                        <p class="card-category">Entretenimiento</p>
+                    </div>
+
+                    <div class="card-pricing">
+                        <p class="card-price">8,99&euro;</p>
+                        <p class="card-period">Mensual</p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <article class="card">
+            <a class="card-link" href="/subscription.html?title=Spotify%20Premium">
+                <img class="card-image" src="assets/Spotify.png" alt="Suscripción a Spotify Premium" />
+
+                <div class="card-content">
+                    <div class="card-info">
+                        <h2 class="card-title">Spotify Premium</h2>
+                        <p class="card-category">Entretenimiento</p>
+                    </div>
+
+                    <div class="card-pricing">
+                        <p class="card-price">16,99&euro;</p>
+                        <p class="card-period">Mensual</p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <article class="card">
+            <a class="card-link" href="/subscription.html?title=BasicFit">
+                <img class="card-image" src="assets/BasicFit.png" alt="Suscripción a BasicFit" />
+
+                <div class="card-content">
+                    <div class="card-info">
+                        <h2 class="card-title">BasicFit</h2>
+                        <p class="card-category">Salud</p>
+                    </div>
+
+                    <div class="card-pricing">
+                        <p class="card-price">8,99&euro;</p>
+                        <p class="card-period">Mensual</p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <article class="card">
+            <a class="card-link" href="/subscription.html?title=DAZN">
+                <img class="card-image" src="assets/DAZN.webp" alt="Suscripción a DAZN" />
+
+                <div class="card-content">
+                    <div class="card-info">
+                        <h2 class="card-title">DAZN</h2>
+                        <p class="card-category">Entretenimiento</p>
+                    </div>
+
+                    <div class="card-pricing">
+                        <p class="card-price">14,99&euro;</p>
+                        <p class="card-period">Mensual</p>
                     </div>
                 </div>
             </a>
@@ -93,6 +200,7 @@
 
     </footer>
 
+    <script src="scripts/dashboard.js"></script>
 </body>
 
 </html>
