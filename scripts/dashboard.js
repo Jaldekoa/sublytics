@@ -12,7 +12,7 @@ const $menuBtn = document.querySelector('.btn-menu');
 const $mainNav = document.getElementById('main-navigation');
 
 $menuBtn.addEventListener('click', () => {
-    const isHidden = mainNav.hidden;
+    const isHidden = $mainNav.hidden;
 
     if (isHidden) {
         $mainNav.hidden = false;
